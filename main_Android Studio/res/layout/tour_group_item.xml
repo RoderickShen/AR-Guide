@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/imageView_tourGroup"
+        android:layout_width="80dp"
+        android:layout_height="88dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:id="@+id/text_tourGroup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_toRightOf="@+id/imageView_tourGroup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="娱乐景点好吃的好玩的样样有"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text_tourGroup_desction"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="21dp"
+        android:layout_toRightOf="@+id/imageView_tourGroup"
+        android:layout_below="@+id/text_tourGroup_title"
+        android:text="desction"
+        android:textSize="15sp"/>
+</RelativeLayout>

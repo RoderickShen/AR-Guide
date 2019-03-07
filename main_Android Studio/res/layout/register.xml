@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B0C4DE"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/back1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/left_arrow"/>
+            <TextView
+                android:layout_width="295dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="注册"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="35sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注册即代表阅读并同意"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#aeaeae"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用条款"
+                    android:textColor=" #6cc4f2"
+                    android:background="#00000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="和"
+                    android:textColor="#aeaeae"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="隐私政策"
+                    android:textColor=" #6cc4f2"
+                    android:background="#00000000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_address"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:hint="邮箱地址 "
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColorHint="#aeaeae"/>
+
+                <Button
+                    android:id="@+id/button_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/send_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="发送验证码"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_identifyingCode"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入收到的验证码 "
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColorHint="#aeaeae" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入昵称"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColorHint="#aeaeae" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入密码"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColorHint="#aeaeae" />
+
+                <Button
+                    android:id="@+id/button_password"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:background="@drawable/disappear_password"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_passwordAgain"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="请再次输入密码"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColorHint="#aeaeae" />
+
+                <Button
+                    android:id="@+id/button_passwordAgain"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:background="@drawable/disappear_password"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:background=" #d9d9d9"
+            android:text="提交" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

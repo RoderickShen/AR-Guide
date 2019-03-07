@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B0C4DE"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:background="#B0C4DE"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="个人中心"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/dialog"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            stv:sCenterViewGravity="left_center"
+            stv:sLeftBottomTextString="修改头像"
+            stv:sLeftBottomTextSize="18sp"
+            stv:sLeftViewGravity="left_center"
+            stv:sRightIconRes="@drawable/head"
+            stv:sRightIconHeight="60dp"
+            stv:sRightIconWidth="60dp"
+            stv:sRightIconShowCircle="true"
+            stv:sRightIconMarginRight="40dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                stv:srcCompat="@drawable/arrow" />
+        </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTopTextString="修改密码"
+        stv:sRightViewGravity="right_center"
+        stv:sRightIconRes="@drawable/arrow"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="退出当前账号"
+            stv:layout_constraintBottom_toBottomOf="parent"
+            stv:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
