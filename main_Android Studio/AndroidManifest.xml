@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roderick.apple.shapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/my_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/my_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".More.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Personal.Login.Login_interface" />
+        <activity android:name=".Personal.Login.Server_item_link" />
+        <activity android:name=".Personal.Login.Register" />
+        <activity android:name=".Personal.Login.ForgetPassword" />
+        <activity
+            android:name=".More.TabGroupActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".Community.CommunityActivity" />
+        <activity android:name=".Personal.PersonalActivity" />
+        <activity android:name=".More.WebViewActivity" />
+        <activity android:name=".Personal.NoteBook.NoteBookActivity" />
+        <activity android:name=".Personal.NoteBook.ShowNoteActivity" />
+        <activity android:name=".Personal.NoteBook.WriteNoteActivity" />
+        <activity android:name=".Personal.SetUp" />
+        <activity android:name=".Community.Discuss.WriteMessageActivity"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zz.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
